@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Synergy - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesLogin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="transition-all duration-300" id="mainBody">
+    <!-- Header -->
+    <header class="header bg-sky-950">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="img/Logo.png" alt="Logo">
+                </div>
+                <button class="mobile-menu-btn text-white" onclick="toggleMobileMenu()">
+                    <i class="material-icons">menu</i>
+                </button>
+                <nav class="nav" id="mobileNav">
+                    <a href="index.html" class="nav-link active text-white">
+                        <i class="material-icons">home</i>
+                        <span>Trang chủ</span>
+                    </a>
+                    <a href="menu.html" class="nav-link text-white">
+                        <i class="material-icons">restaurant_menu</i>
+                        <span>Sản phẩm</span>
+                    </a>
+                    <a href="stores.html" class="nav-link text-white">
+                        <i class="material-icons">store</i>
+                        <span>Cửa hàng</span>
+                    </a>
+                    <a href="about.html" class="nav-link text-white">
+                        <i class="material-icons">info</i>
+                        <span>Về chúng tôi</span>
+                    </a>
+                </nav>
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <button class="search-btn"><i class="material-icons">search</i></button>
+                    </div>
+                    <button class="search-toggle-btn text-white" onclick="toggleSearch()">
+                        <i class="material-icons">search</i>
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-search" id="mobileSearch">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button class="search-btn"><i class="material-icons">search</i></button>
+            </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- LOGIN WRAPPER -->
+    <div class="container-login">
+        <div class="login-card">
+            <h2>Đăng nhập</h2>
+
+            <form>
+                <label>Email</label>
+                <input type="email" placeholder="Nhập email..." required>
+
+                <label>Mật khẩu</label>
+                <input type="password" placeholder="Nhập mật khẩu..." required>
+
+                <button type="submit" class="btn-login">Đăng nhập</button>
+
+                <p class="signup">
+                    Chưa có tài khoản? <a href="register.html">Đăng ký ngay</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
